@@ -1,0 +1,24 @@
+
+body {
+  scrollbar-width: thin; /* "auto" or "thin"  */
+  scrollbar-color: #530d55 #530d55; /* scroll thumb & track */
+}
+.expanded {
+  width: 100vw;
+  margin-left: 49.2%;
+  transform: translateX(-50%);
+}
+
+
+body::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #090; /* color of the scroll thumb */
+
+  border: 2px solid #090; /* creates padding around scroll thumb */
+}
+
