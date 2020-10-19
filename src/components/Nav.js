@@ -33,7 +33,7 @@ export const Nav = (props) => {
       <Stack isInline spacing={[3, 4, 8]} align="center">
         <ChakraLink href="#about">About</ChakraLink>
         <ChakraLink href="#skillset">Skills</ChakraLink>
-        <ChakraLink>Projects</ChakraLink>
+        <ChakraLink href="#projects">Projects</ChakraLink>
         <ChakraLink href="#contact">Contact</ChakraLink>
       </Stack>
     </Box>
