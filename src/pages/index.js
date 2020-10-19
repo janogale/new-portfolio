@@ -9,6 +9,7 @@ import { Nav } from "../components/Nav";
 import { SkillSet } from "../components/SkillSet";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
+import { Projects } from "../components/Projects";
 
 const Index = () => (
   <Container>
@@ -31,25 +32,15 @@ const Index = () => (
       <Box id="skillset" as="section" py="12">
         <SkillSet />
       </Box>
+      <Box id="projects" as="section" py="12">
+        <Projects />
+      </Box>
       <Box id="contact" as="section" py="12">
         <Contact />
       </Box>
     </Main>
 
-    <Footer>
-      <Text>
-        Designed By
-        <ChakraLink
-          color="#09c7b6"
-          ml={2}
-          href="https://twitter.com/mmjanagale"
-          isExternal
-        >
-          Janagale
-          <Icon name="external-link" mx="3px" />
-        </ChakraLink>
-      </Text>
-    </Footer>
+    <Footer />
   </Container>
 );
 

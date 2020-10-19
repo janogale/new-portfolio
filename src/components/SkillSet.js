@@ -26,7 +26,6 @@ import {
 export const SkillSet = (props) => {
   return (
     <Box
-      as="section"
       display="flex"
       flexDirection={["column"]}
       justifyContent="space-between"
@@ -143,11 +142,6 @@ export const SkillSet = (props) => {
               />
               Flutter
             </ListItem>
-            <ListItem>
-              <ListIcon icon="check-circle" color="green.500" />
-              Flutter
-            </ListItem>
-            {/* You can also use custom icons from react-icons */}
           </List>
         </Box>
       </Flex>

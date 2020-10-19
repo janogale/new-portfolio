@@ -25,7 +25,7 @@ export const Nav = (props) => {
       >
         <Box>
           <Avatar size="lg" name="Mukhtar Mahamed" src="images/mukhtar.jpg">
-            <AvatarBadge borderColor="gray.100" size="1em" bg="green.500" />
+            <AvatarBadge borderColor="gray.300" boxSize=".7em" bg="green.500" />
           </Avatar>
         </Box>
       </Tooltip>

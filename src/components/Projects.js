@@ -6,11 +6,12 @@ import {
   Link as ChakraLink,
   Flex,
   Divider,
+  Icon,
   useColorModeValue,
 } from "@chakra-ui/core";
 import { FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 
-export const Contact = (props) => {
+export const Projects = (props) => {
   const color = useColorModeValue("#3f51b5", "#056b5a");
   return (
     <Box
@@ -19,20 +20,20 @@ export const Contact = (props) => {
       justifyContent="space-between"
     >
       <Heading my={4} textAlign="center" as="h2" color={color}>
-        Get In Touch
+        Projects
       </Heading>
       <Divider borderColor="gray.300" my={8} />
 
       <Flex justifyContent="space-around">
-        <ChakraLink href="https://twitter.com/mmjanagale" isExternal>
-          <Box as={FaTwitter} boxSize={12} />
-        </ChakraLink>
-        <ChakraLink href="https://github.com/janogale" isExternal>
-          <Box as={FaGithub} boxSize={12} />
-        </ChakraLink>
-        <ChakraLink href="https://wa.me/252634220002?text=asc..." isExternal>
-          <Box as={FaWhatsapp} boxSize={12} />
-        </ChakraLink>
+        <Box>
+          <ChakraLink href="#">Project 1</ChakraLink>
+        </Box>
+        <Box>
+          <ChakraLink href="#">Project 2</ChakraLink>
+        </Box>
+        <Box>
+          <ChakraLink href="#">Project 3</ChakraLink>
+        </Box>
       </Flex>
     </Box>
   );

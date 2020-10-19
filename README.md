@@ -1,1 +1,1 @@
-# Mukhtar Mahamed Portfolio [Janagale](https://twitter.com/home)
+# Mukhtar Mahamed Portfolio [Janagale](https://twitter.com/mmjanagale)

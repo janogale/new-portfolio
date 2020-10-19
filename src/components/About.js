@@ -7,18 +7,24 @@ import {
   Tag,
   Flex,
   Divider,
+  useColorModeValue,
 } from "@chakra-ui/core";
 
 export const About = (props) => {
+  const color = useColorModeValue("#3f51b5", "#64ffda");
   return (
     <Box
-      as="section"
       display="flex"
       flexDirection={["column"]}
       justifyContent="space-between"
     >
       <Text color="#8892b0">&#x1F590; I am</Text>
-      <Heading my={4} as="h2" color="#64ffda">
+      <Heading
+        my={4}
+        textAlign={{ base: "center", md: "left" }}
+        as="h2"
+        color={color}
+      >
         Mukhtar Mahamed
       </Heading>
       <Flex alignItems="center" ml={8}>
@@ -26,13 +32,7 @@ export const About = (props) => {
           aka
         </Text>
 
-        <Tag
-          size="lg"
-          rounded="full"
-          variant="solid"
-          variantColor="cyan"
-          px="2"
-        >
+        <Tag size="lg" rounded="full" variant="solid" colorScheme="cyan" px="2">
           Janagale
         </Tag>
       </Flex>

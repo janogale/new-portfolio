@@ -1,27 +1,13 @@
-import { useColorMode, Switch, IconButton } from "@chakra-ui/core";
+import { useColorMode, Box } from "@chakra-ui/core";
 
-export const DarkModeSwitch2 = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === "dark";
-  return (
-    <Switch
-      color="green"
-      isChecked={isDark}
-      onChange={toggleColorMode}
-    />
-  );
-};
+import { FaMoon, FaSun } from "react-icons/fa";
 
 export const DarkModeSwitch = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode("dark");
   const isDark = colorMode === "dark";
-  const icon = isDark ? "moon" : "sun";
+  const icon = isDark ? FaMoon : FaSun;
 
   return (
-    <IconButton
-      onClick={toggleColorMode}
-      aria-label="Search database"
-      icon={icon}
-    />
+    <Box onClick={toggleColorMode} aria-label="change color mode" as={icon} />
   );
 };
