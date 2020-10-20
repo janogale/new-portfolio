@@ -1,13 +1,13 @@
 import {
-  Stack,
   Box,
   Heading,
-  Text,
+  Spinner,
   Link as ChakraLink,
+  Stack,
   Flex,
   Divider,
-  Icon,
   useColorModeValue,
+  Tooltip,
 } from "@chakra-ui/core";
 import { FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 
@@ -35,6 +35,22 @@ export const Projects = (props) => {
           <ChakraLink href="#">Project 3</ChakraLink>
         </Box>
       </Flex>
+      <Stack spacing={8} mt={12} alignItems="center">
+        <Heading fontSize="lg">Projects are heating up....</Heading>
+        <Tooltip
+          label="Awosome things are on the way"
+          aria-label="coming soon"
+          bg="green.400"
+        >
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="gray.400"
+            color="green.600"
+            size="xl"
+          />
+        </Tooltip>
+      </Stack>
     </Box>
   );
 };
