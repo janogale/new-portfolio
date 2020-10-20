@@ -8,6 +8,11 @@ export const DarkModeSwitch = () => {
   const icon = isDark ? FaMoon : FaSun;
 
   return (
-    <Box onClick={toggleColorMode} aria-label="change color mode" as={icon} />
+    <Box
+      onClick={toggleColorMode}
+      _hover={{ cursor: "pointer" }}
+      aria-label="change color mode"
+      as={icon}
+    />
   );
 };
