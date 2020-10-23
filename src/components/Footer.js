@@ -5,7 +5,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/core";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaArrowUp } from "react-icons/fa";
 
 export const Footer = (props) => {
   const bg = useColorModeValue("#1a202c", "gray.900");
@@ -13,7 +13,6 @@ export const Footer = (props) => {
   return (
     <Flex
       as="footer"
-      display="flex"
       justifyContent="center"
       position="relative"
       bg={bg}
@@ -36,6 +35,12 @@ export const Footer = (props) => {
           <Box display="inline" as={FaExternalLinkAlt} mx="4px" />
         </ChakraLink>
       </Text>
+
+      <Box flexBasis="20%" textAlign="right">
+        <ChakraLink color="#09c7b6" href="#top" title="Go top of Page">
+          <Box display="inline" as={FaArrowUp} mx="4px" />
+        </ChakraLink>
+      </Box>
     </Flex>
   );
 };

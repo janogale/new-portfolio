@@ -12,6 +12,7 @@ export const DarkModeSwitch = () => {
       onClick={toggleColorMode}
       _hover={{ cursor: "pointer" }}
       aria-label="change color mode"
+      title="change color mode"
       as={icon}
     />
   );

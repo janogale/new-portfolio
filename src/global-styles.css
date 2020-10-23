@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   scrollbar-width: thin; /* "auto" or "thin"  */
   scrollbar-color: #530d55 #530d55; /* scroll thumb & track */

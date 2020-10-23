@@ -8,7 +8,6 @@ import {
   Tooltip,
   Divider,
 } from "@chakra-ui/core";
-
 export const Nav = (props) => {
   return (
     <Box
@@ -18,27 +17,25 @@ export const Nav = (props) => {
       justifyContent="space-between"
       alignItems="center"
     >
-      <Link href="/">
-        <a>
-          <Tooltip
-            hasArrow
-            label="&#x1F590; Mukhtar Mahamed, Full Stack Developer"
-            bg="green.500"
-            color="gray.100"
-          >
-            <Box>
-              <Avatar size="lg" name="Mukhtar Mahamed" src="images/mukhtar.jpg">
-                <AvatarBadge
-                  borderColor="gray.300"
-                  boxSize=".7em"
-                  bg="green.500"
-                />
-              </Avatar>
-            </Box>
-          </Tooltip>
-        </a>
-      </Link>
-      <Divider borderColor="white" my={4} orientation={["vertical"]} />
+      <Box mb={{ base: 12, md: 2 }}>
+        <Tooltip
+          hasArrow
+          label="&#x1F590; Mukhtar Mahamed, Full Stack Developer"
+          bg="green.500"
+          color="gray.100"
+          shouldWrapChildren
+        >
+          <Box>
+            <Avatar size="lg" name="Mukhtar Mahamed" src="images/mukhtar.jpg">
+              <AvatarBadge
+                borderColor="gray.300"
+                boxSize=".7em"
+                bg="green.500"
+              />
+            </Avatar>
+          </Box>
+        </Tooltip>
+      </Box>
       <Stack isInline spacing={[3, 4, 8]} align="center">
         <ChakraLink href="#about">About</ChakraLink>
         <ChakraLink href="#skillset">Skills</ChakraLink>
