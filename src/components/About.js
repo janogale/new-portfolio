@@ -25,7 +25,7 @@ export const About = (props) => {
         as="h2"
         color={color}
       >
-        Mukhtar Mahamed
+        Mukhtar Mahamed - Web Dev
       </Heading>
       <Flex alignItems="center" ml={8}>
         <Text color="#8892b0" mr="4">
