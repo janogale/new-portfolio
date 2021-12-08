@@ -28,7 +28,7 @@ export const Footer = (props) => {
         <ChakraLink
           color="#09c7b6"
           ml={2}
-          href="https://twitter.com/mmjanagale"
+          href="https://twitter.com/mjanogale"
           isExternal
         >
           Janagale
